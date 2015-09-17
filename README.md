@@ -13,7 +13,7 @@ This is set of classes, to provide sending SMS using usb GSM-device:
 
 5) GSMModemHiLink.h/cpp - it's support for contemporary HiLink 3G modems (HTTP connection to HUAWEI E303, E3531 and etc.),
 
-6) Serial.h/cpp - support physical (via RS-232) or virtual (via USB) COM-port channel,
+6) Serial.h/cpp - support physical (via RS-232) or virtual (via USB) COM-port channel (need only for AT-modems commands GSM devices),
 
 7) PDUEncoder.h/cpp - for generate PDU section in commands: AT+CUSD and AT+CMGW (not using for HiLink 3G modems),
 
