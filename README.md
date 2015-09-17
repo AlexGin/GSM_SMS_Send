@@ -1,5 +1,5 @@
 # GSM_SMS_Send
-Interfaces and classes for sending SMS via GSM-device (C++)
+Interfaces and classes for sending SMS via GSM-device (C++), also support USSD-command sending.
 
 This is set of classes, to provide sending SMS using usb GSM-device:
 
