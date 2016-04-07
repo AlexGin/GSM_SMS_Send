@@ -1,19 +1,24 @@
 #if !defined(_PBRECORD_H)
 #define _PBRECORD_H
 
-#include "stdafx.h"
-
 class CPBRecord : public CObject
 {
 	public: 
 		CPBRecord();
-		CPBRecord(CString strPhone, CString strName, CString strAddInfo);
-
+		CPBRecord(const CString& strPhone, const CString& strName, const CString& strAddInfo);
+	private:
 		CString m_strName;
 		CString m_strPhone;
 		CString m_strAddInfo;
+	public:
+		CString GetName() const;
+		CString GetPhone() const;
+		CString GetAddInfo() const;
+		void SetName(const CString& strName);
+		void SetPhone(const CString& strPhone);
+		void SetAddInfo(const CString& strAddInfo);
 
-		void SetAt(long nIndex, CString& str);
+		void SetAt(long nIndex, const CString& str);
 		CString GetAt(long nIndex) const;
 };
 
